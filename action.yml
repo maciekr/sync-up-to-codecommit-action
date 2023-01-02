@@ -11,6 +11,15 @@ inputs:
   aws_region:
     description: Region of the CodeCommit repository.
     required: true
+  codecommit_url:
+    description: CodeCommit Url including HTTPS Git credentials for AWS CodeCommit.
+    required: true
+  branch_from:
+    description: From branch.
+    required: true
+  branch_to:
+    description: To branch.
+    required: true
 runs:
   using: 'docker'
   image: './Dockerfile'
